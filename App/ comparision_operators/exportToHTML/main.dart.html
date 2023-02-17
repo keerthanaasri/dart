@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>main.dart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.dart</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">'dart:math'</span><span class="s2">;</span>
+<span class="s2">void </span><span class="s0">main(){</span>
+  <span class="s3">//declare variable</span>
+  <span class="s0">double x=</span><span class="s4">7</span><span class="s2">,</span><span class="s0">y=</span><span class="s4">6</span><span class="s2">;</span>
+  <span class="s3">//equal</span>
+  <span class="s0">print(</span><span class="s1">'</span><span class="s0">$x </span><span class="s1">is equal to </span><span class="s0">$y</span><span class="s1">=</span><span class="s0">${x==y}</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+
+  <span class="s3">//non-equal</span>
+  <span class="s0">print(</span><span class="s1">'</span><span class="s0">$x </span><span class="s1">is not equal to </span><span class="s0">$y</span><span class="s1">=</span><span class="s0">${x!=y}</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+
+  <span class="s3">//greater</span>
+  <span class="s0">print(</span><span class="s1">'</span><span class="s0">$x </span><span class="s1">is greater than </span><span class="s0">$y</span><span class="s1">=</span><span class="s0">${x&gt;y}</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+
+  <span class="s3">//lesser</span>
+  <span class="s0">print(</span><span class="s1">'</span><span class="s0">$x </span><span class="s1">is lesser than </span><span class="s0">$y</span><span class="s1">=</span><span class="s0">${x&lt;y}</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+
+  <span class="s3">//greater than or equal</span>
+  <span class="s0">print(</span><span class="s1">'</span><span class="s0">$x </span><span class="s1">is greater than or equal to</span><span class="s0">$y</span><span class="s1">=</span><span class="s0">${x&gt;=y}</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+
+  <span class="s3">//lesser than or equal</span>
+  <span class="s0">print (</span><span class="s1">'</span><span class="s0">$x </span><span class="s1">is lesser than or equal to </span><span class="s0">$y</span><span class="s1">=</span><span class="s0">${x&lt;=y}</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+
+  <span class="s3">//variable</span>
+  <span class="s0">bool terms</span><span class="s2">;</span>
+
+  <span class="s3">//single condition/if condition</span>
+  <span class="s0">terms=</span><span class="s2">true;</span>
+
+  <span class="s3">//without comparing the values</span>
+  <span class="s2">if</span><span class="s0">(terms==</span><span class="s2">true</span><span class="s0">) {</span>
+    <span class="s0">print(</span><span class="s1">'user agreed for terms and conitions:</span><span class="s0">$terms</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">}</span>
+
+  <span class="s3">//user don't agreed for terms</span>
+    <span class="s2">if</span><span class="s0">(terms!=</span><span class="s2">false</span><span class="s0">){</span>
+    <span class="s0">print(</span><span class="s1">'user agreed for terms and condition:</span><span class="s0">$terms</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+
+    <span class="s3">//declare variable</span>
+
+    <span class="s0">double total_price=</span><span class="s4">44</span><span class="s2">,</span><span class="s0">total_land=</span><span class="s4">270</span><span class="s2">,</span><span class="s0">r=</span><span class="s4">14</span><span class="s2">;</span>
+    <span class="s3">//without math</span>
+    <span class="s0">total_price = </span><span class="s4">3.14</span><span class="s0">*r*r</span><span class="s2">;</span>
+    <span class="s0">print(</span><span class="s1">'area of circle:=</span><span class="s0">${total_price}</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+    <span class="s3">//with math</span>
+    <span class="s0">double total_price_wm=</span><span class="s4">44</span><span class="s2">;</span>
+      <span class="s0">total_price_wm=pi*r*r</span><span class="s2">;</span>
+      <span class="s0">print(</span><span class="s1">'area of circle=</span><span class="s0">${total_price_wm}</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+<span class="s3">//price difference</span>
+    <span class="s0">print(</span><span class="s1">'price difference=</span><span class="s0">${total_price-total_price_wm}</span><span class="s1">'</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">}</span>
+
+<span class="s3">//declare variable</span>
+    <span class="s0">int age=</span><span class="s4">34</span><span class="s2">;</span>
+
+<span class="s3">//double condition</span>
+    <span class="s2">if</span><span class="s0">(age &lt; </span><span class="s4">10</span><span class="s0">) {</span>
+      <span class="s0">print(</span><span class="s1">'recommend cartoon movies'</span><span class="s0">)</span><span class="s2">;</span>
+    <span class="s0">}</span>
+    <span class="s2">else</span><span class="s0">{</span>
+        <span class="s0">print(</span><span class="s1">'recommend horror movies'</span><span class="s0">)</span><span class="s2">;</span>
+<span class="s0">}</span>
+<span class="s3">//ternary condition</span>
+<span class="s0">age&lt;</span><span class="s4">10</span><span class="s0">? print(</span><span class="s1">'recommend cartoon movies'</span><span class="s0">):print(</span><span class="s1">'recommend horror movies'</span><span class="s0">)</span><span class="s2">;</span>
+
+    <span class="s3">//declare varible</span>
+
+  <span class="s0">String state=</span><span class="s1">'tamilnadu'</span><span class="s2">;</span>
+
+  <span class="s3">//multi coniotion</span>
+    <span class="s2">if </span><span class="s0">(state.toLowerCase()==</span><span class="s1">'tamilnadu'</span><span class="s0">) {</span>
+      <span class="s0">print(</span><span class="s1">'recommend tamil movies'</span><span class="s0">)</span><span class="s2">;</span>
+    <span class="s0">}</span>
+    <span class="s2">else if</span><span class="s0">(state.toLowerCase()==</span><span class="s1">'karnataka'</span><span class="s0">)</span>
+      <span class="s0">{</span>
+    <span class="s0">print(</span><span class="s1">'recommend kanada movies'</span><span class="s0">)</span><span class="s2">;</span><span class="s0">}</span>
+    <span class="s2">else if</span><span class="s0">(state.toLowerCase()==</span><span class="s1">'maharashtra'</span><span class="s0">){</span>
+    <span class="s0">print(</span><span class="s1">'recommend hindi movies'</span><span class="s0">)</span><span class="s2">;</span><span class="s0">}</span>
+  <span class="s2">else </span><span class="s0">{</span>
+      <span class="s0">print(</span><span class="s1">'recommend english movies'</span><span class="s0">)</span><span class="s2">;</span>
+    <span class="s0">}</span>
+
+  <span class="s3">//switch statement</span>
+<span class="s2">switch</span><span class="s0">(state.toLowerCase()){</span>
+  <span class="s2">case </span><span class="s1">'others'</span><span class="s0">:</span>
+  <span class="s0">print(</span><span class="s1">'recommend tamil movies'</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s2">break;</span>
+<span class="s2">case </span><span class="s1">'karnataka'</span><span class="s0">:</span>
+  <span class="s0">print(</span><span class="s1">'recommend kanada movies'</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s2">break;</span>
+  <span class="s2">case </span><span class="s1">'maharashtra'</span><span class="s0">:</span>
+<span class="s0">print(</span><span class="s1">'recommend hindi movies'</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s2">break;</span>
+<span class="s2">default</span><span class="s0">:</span>
+  <span class="s0">print(</span><span class="s1">'recommend english movies'</span><span class="s0">)</span><span class="s2">;</span><span class="s0">}</span>
+
+  <span class="s3">//logical AND &amp;&amp;</span>
+<span class="s0">String dose</span><span class="s2">,</span><span class="s0">chutney</span><span class="s2">;</span>
+  <span class="s0">dose=</span><span class="s1">'good'</span><span class="s2">;</span>
+  <span class="s0">chutney=</span><span class="s1">'good'</span><span class="s2">;</span>
+  <span class="s2">if</span><span class="s0">(dose==</span><span class="s1">'good'</span><span class="s0">&amp;&amp;chutney==</span><span class="s1">'good'</span><span class="s0">) {</span>
+    <span class="s0">print(</span><span class="s1">'breakfast was good'</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">}</span><span class="s2">else </span><span class="s0">{</span>
+    <span class="s0">print(</span><span class="s1">'breakfast was bad'</span><span class="s0">)</span><span class="s2">;</span><span class="s0">}</span>
+
+  <span class="s3">//logical OR ||</span>
+  <span class="s0">String lottery1</span><span class="s2">,</span><span class="s0">lottery2</span><span class="s2">;</span>
+  <span class="s0">lottery1=</span><span class="s1">'won'</span><span class="s2">;</span>
+  <span class="s0">lottery2=</span><span class="s1">'won'</span><span class="s2">;</span>
+
+  <span class="s2">if</span><span class="s0">(lottery1==</span><span class="s1">'won'</span><span class="s0">||lottery2==</span><span class="s1">'won'</span><span class="s0">){</span>
+<span class="s0">print(</span><span class="s1">'happy customer'</span><span class="s0">)</span><span class="s2">;</span><span class="s0">}</span>
+<span class="s2">else</span><span class="s0">{</span>
+  <span class="s0">print(</span><span class="s1">'sad costomer'</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">}</span>
+
+
+
+
+
+
+
+
+<span class="s0">}</span></pre>
+</body>
+</html>
