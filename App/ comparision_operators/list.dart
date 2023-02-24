@@ -67,6 +67,7 @@ void main(){
   //contains
   var check=shopping_1.contains('apple');
   print('shopping_1 contasins apple=$check');
+
 }
 
 
