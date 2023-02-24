@@ -43,6 +43,30 @@ void main(){
   //replace
   programbooks[3]='javascript';
   print('replaced  booklist:$programbooks');
+
+  //int
+  List<int> luckynum=[1,2,3,4,5];
+  print('luckynumbers:=$luckynum');
+
+  var contant=['keerthi',19];
+  print(contant);
+
+  //multiple List
+  var fruits=['apple,banana,organge'];
+  var vegetables=['onion,tomato,potato'];
+  var snacks=['lays,daily milk,coke'];
+
+
+  var shopping=[fruits,vegetables,snacks];
+  print(shopping);
+
+  //spread operator
+  var shopping_1=[...fruits,...vegetables,...snacks];
+  print(shopping_1);
+
+  //contains
+  var check=shopping_1.contains('apple');
+  print('shopping_1 contasins apple=$check');
 }
 
 
